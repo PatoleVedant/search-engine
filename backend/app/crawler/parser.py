@@ -34,13 +34,12 @@ def parse_page(html, base_url):
 
         href = a["href"].strip()
 
-        # Convert relative URL → absolute URL
+        
         absolute = urljoin(
             base_url,
             href
         )
 
-        # Remove #fragment
         absolute, _ = urldefrag(
             absolute
         )
