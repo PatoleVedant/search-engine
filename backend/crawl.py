@@ -4,7 +4,7 @@ from app.crawler.crawler import Crawler
 
 def main():
 
-    init_db()
+    # init_db()
 
     seed_url = input(
         "Enter seed URL: "
